@@ -30,7 +30,7 @@ twitter_username: jyrnan
 github_username:  jyrnan
 
 # Build settings
-theme: minima
+theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
 
