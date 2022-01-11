@@ -138,7 +138,7 @@ defaults:
    home:
      heading: "Flying as swfit"
      subheading: "My story of lerning SwiftLang"
-#     banner: "Your image url"
+     banner: "/assets/images/banners/home.jpeg"
 
 # Banner default settings
 # These banner settings are for global banner default, but you can also
