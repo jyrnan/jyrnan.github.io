@@ -136,8 +136,8 @@ header_pages:
 # Page default value
 defaults:
    home:
-     heading: "Flying as swfit"
-     subheading: "My story of lerning SwiftLang"
+     heading: "Flying as swift"
+     subheading: "My story of learning SwiftLang"
      banner: "/assets/images/banners/home.jpeg"
 
 # Banner default settings
