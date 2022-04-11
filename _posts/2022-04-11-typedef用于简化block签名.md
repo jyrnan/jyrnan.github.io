@@ -55,3 +55,7 @@ typedef void(^EOCCompletionHandler)(NSData *data, NSError *error);
 ```
 
 上面的方法代码就可以写得更简洁了：
+
+```objectivec
+- (void)startWithCompletionHandler:(EOCCompletionHandler)completion;
+```
