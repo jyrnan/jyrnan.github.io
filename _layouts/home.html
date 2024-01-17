@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <head>
   <style>
     .gray-bold {
@@ -8,36 +9,43 @@ layout: default
     }
   </style>
 
-<style>
-  h3 {
-    margin-top: 20px; /* 调整为适合的值 */
-    margin-bottom: 0px; /* 调整为适合的值 */
-    font-weight: bold;
-  }
-</style>
+  <style>
+    h3 {
+      margin-top: 20px;
+      /* 调整为适合的值 */
+      margin-bottom: 0px;
+      /* 调整为适合的值 */
+      font-weight: bold;
+    }
+    .category {
+      color: gray;
+      font-weight: bold;
+    }
+  </style>
 </head>
+
 <!-- This loops through the paginated posts -->
 {% for post in paginator.posts %}
 <div>
   <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-  
   <span class="gray-bold">{{ post.date }} </span>
-  <span class="author"> {{ post.categories }} </span>
+  <span class="category"> {{ post.categories }} </span>
   <break></break>
 </div>
 {% endfor %}
-
+<br>
+<br>
 <!-- Pagination links -->
 <div class="pagination">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+  <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
   {% else %}
-    <span class="previous">Previous</span>
+  <span class="previous">Previous</span>
   {% endif %}
   <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  <a href="{{ paginator.next_page_path }}" class="next">Next</a>
   {% else %}
-    <span class="next">Next</span>
+  <span class="next">Next</span>
   {% endif %}
 </div>
