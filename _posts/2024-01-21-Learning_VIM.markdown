@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Learning VIM"
+title:  "指尖如飞之VIM简介"
 date:   2024-01-21 16:19:58 +0800
 categories: Nothing
 ---
